@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: auto;
+        }
+        td{
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- rest operator
+    and spread operator -->
+    <!-- API,
+    classes and constructor,
+    call by value and call by reference,
+    dynamic properties -->
+    <!-- this -->
+    <!-- return -->
+    <!-- HOF= Higher Order Function -->
+    <!-- map, filter, find -->
+<!-- 1. Taye Abidakun
+2. Taye Abidakun
+3. Taye Abidakun
+4. Taye Abidakun -->
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input id="inp1" onkeyup="myFunc()"></td>
+            <td><input id="inp2" onkeyup="myFunc()"></td>
+            <td id="amount"></td>
+        </tr>
+        <tr>
+            <td><input id="inp3" onkeyup="myFunc()"></td>
+            <td><input id="inp4" onkeyup="myFunc()"></td>
+            <td id="totalAmount"></td>
+        </tr>
+        <tr>
+            <td><input id="inp5" onkeyup="myFunc()"></td>
+            <td><input id="inp6" onkeyup="myFunc()"></td>
+            <td id="amountSpent"></td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td colspan="2" id="total"></td>
+            
+        </tr>
+
+    </tbody>
+   
+
+</table>
+   
+    <input disabled id="display">
+    <script type="text/javascript">
+        function myFunc(){
+            amount.innerText = Number(inp1.value) * Number(inp2.value);
+            totalAmount.innerText =  Number(inp3.value) * Number(inp4.value);
+            amountSpent.innerText =  Number(inp5.value) * Number(inp6.value);
+            let num = amount.innerText+ totalAmount.innerText;
+            total.innerText = Number(num) + Number(amountSpent.innerText);
+        }
+       
+       
+       
+    </script>
+</body>
+</html>
